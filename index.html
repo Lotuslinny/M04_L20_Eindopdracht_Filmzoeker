@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <script defer src="JavaScript_map/script1.js"></script>
+  <script defer src="JavaScript_map/script2.js"></script>
+  <title>M04_L20_Eindopdracht_Filmzoeker</title>
+</head>
+
+
+<body>
+  <header>
+    <h1>Welkom bij de Filmzoeker!</h1>
+  </header>
+  <nav id="navigation">
+    <!-- zijn de divjes nodig? -->
+    <!-- heb ik id's voor de labels nodig? -->
+    <div class="navigation__item">
+      <input class="navigation__button" type="radio" id="nieuwste-films" name="film-filter" value="nieuwste-films">
+      <!-- Hier in label komt de naam van de filter -->
+      <label for="nieuwste-films">Nieuwste Films</label>
+    </div>
+    <div class="navigation__item">
+      <input class="navigation__button" type="radio" id="avengers" name="film-filter" value="avengers">
+      <!-- Hier in label komt de naam van de filter -->
+      <label for="avengers">Avengers Films</label>
+    </div>
+    <div class="navigation__item">
+      <input class="navigation__button" type="radio" id="x-men" name="film-filter" value="x-men">
+      <!-- Hier in label komt de naam van de filter -->
+      <label for="x-men">X-Men Films</label>
+    </div>
+
+    <div class="navigation__item">
+      <input class="navigation__button" type="radio" id="princess" name="film-filter" value="princess">
+      <!-- Hier in label komt de naam van de filter -->
+      <label for="princess">Princess Films</label>
+    </div>
+
+    <div class="navigation__item">
+      <input class="navigation__button" type="radio" id="batman" name="film-filter" value="batman">
+      <!-- Hier in label komt de naam van de filter -->
+      <label for="batman">Batman Films</label>
+    </div>
+
+    <div class="navigation__item">
+      <label for="site-search">Zoek de film:</label>
+      <input type="search" id="site-search" name="search-movie" aria-label="Search through site content">
+    </div>
+  </nav>
+
+  <main id="main">
+    <ul id="main__list"></ul>
+  </main>
+
+</body>
+
+</html>
